@@ -4,15 +4,6 @@ import Star from "./Star";
 
 const MovieCard = (props) => {
   let rateValue = Math.round(Number(props.moviesObject.rate));
-  console.log(rateValue, typeof rateValue);
-
-  //   const starsReender = (ranking) => {
-  //     let img = <img />;
-  //     let src = img.src;
-  //     for (let i = 1; i < 11; i++) {
-  //       i < ranking ? (src = "/stars/full.png") : (src = "/stars/empty.png");
-  //     }
-  //   };
 
   return (
     <>
