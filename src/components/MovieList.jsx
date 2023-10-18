@@ -1,16 +1,17 @@
 import MovieCard from "./MovieCard";
 import movies from "../db/movies";
+import "./MovieList.scss";
 
 // Props Version
 
 const MovieList = () => {
   return (
     <>
-      <ul className="movie-list">
+      <article className="movie-list">
         {movies.map((movie, index) => (
           <MovieCard moviesObject={movie} key={index} />
         ))}
-      </ul>
+      </article>
     </>
   );
 };

@@ -1,4 +1,5 @@
-import "./Star.css";
+/* eslint-disable react/prop-types */
+import "./Star.scss";
 
 const Star = ({ rate }) => {
   const stars = [];
