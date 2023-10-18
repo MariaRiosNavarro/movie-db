@@ -1,4 +1,19 @@
 .movie-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 30vw);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 45vw);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie-list {
+    grid-template-columns: repeat(1, 90vw);
+    gap: 2rem;
+  }
 }

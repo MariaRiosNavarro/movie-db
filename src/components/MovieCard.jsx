@@ -10,7 +10,8 @@ const MovieCard = (props) => {
       <article className="movie-card">
         <h3 className="title">{props.moviesObject.title}</h3>
         <span className="year">{props.moviesObject.year}</span>
-        <h4 className="direction">{props.moviesObject.direction}</h4>
+        <h4 className="direction">{props.moviesObject.director}</h4>
+
         <p className="duration">{props.moviesObject.duration}</p>
         <div className="genre-wrapper">
           {props.moviesObject.genre.map((oneGenre, index) => (

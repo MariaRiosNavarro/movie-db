@@ -1,10 +1,47 @@
 .movie-card {
   margin: 1rem;
+  padding: 4rem 0;
   background-color: rgb(85, 22, 152);
   color: rgb(252, 241, 227);
-  padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
+  justify-content: space-between;
   flex-direction: column;
+  border-radius: 10px;
+  border: 1px double #d6c256;
+  outline-offset: 10px;
+  outline: 4px solid rgb(85, 22, 152);
+
+  .title {
+    font-size: 3rem;
+    max-width: 350px;
+    text-align: center;
+    color: #d6c256;
+  }
+  .year {
+    font-size: 2rem;
+  }
+  .direction {
+    font-size: 2rem;
+    color: #d6c256;
+  }
+  .duration {
+    font-size: 2rem;
+  }
+  .genre-wrapper {
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    .genre {
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid yellow;
+    }
+  }
 }
